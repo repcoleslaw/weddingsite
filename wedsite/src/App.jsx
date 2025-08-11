@@ -6,9 +6,7 @@ function App() {
 
   return (
     <>
-    <div>
-      Envelope
-    </div>
+    <div>Envelope</div>
     <div>Info Card</div>
     <div>Flower Span</div>
     <div>Image Card</div>
