@@ -49,7 +49,7 @@ function App() {
                 />
               </a>
               <a 
-              className='absolute md:bottom-[60px] sm:bottom-[60px] bottom-[30px] md:left-[30px] sm:left-[30px] left-[20px] md:w-[280px] sm:w-[200px] w-[180px]'
+              className='absolute md:bottom-[60px] sm:bottom-[60px] bottom-[50px] md:left-[30px] sm:left-[30px] left-[30px] md:w-[280px] sm:w-[200px] w-[180px]'
               href="https://andrew-and-carolyn.wedsites.com/rsvp"
               target='_blank'
               >
