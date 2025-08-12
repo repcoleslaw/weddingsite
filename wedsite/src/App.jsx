@@ -31,7 +31,7 @@ function App() {
               >
               </img>
             </Card>
-            {/* desktop viewer */}
+            {/* images & btns */}
             <div 
             className='relative w-full md:w-1/2 p-4 text-center m-auto'>                      
               <img
@@ -40,26 +40,26 @@ function App() {
               className='w-full h-auto justify-center m-auto z-30'
               />
               <a 
-              className='absolute md:bottom-[60px] bottom-[60px] md:right-[60px] right-[30px] md:w-[240px] w-[160px]'
+              className='absolute md:bottom-[60px] sm:bottom-[60px] bottom-[40px] md:right-[60px] sm:right-[30px] right-[30px] md:w-[240px] sm:w-[200px] w-[140px]'
               href="https://andrew-and-carolyn.wedsites.com/"
               target='_blank'                
               >
                 <img src='/detailButton.png'
-                
+                  className='transition-transform duration-300 hover:scale-102'
                 />
               </a>
               <a 
-              className='absolute md:bottom-[60px] bottom-[60px] md:left-[30px] left-[20px] md:w-[280px] w-[200px]'
+              className='absolute md:bottom-[60px] sm:bottom-[60px] bottom-[30px] md:left-[30px] sm:left-[30px] left-[20px] md:w-[280px] sm:w-[200px] w-[180px]'
               href="https://andrew-and-carolyn.wedsites.com/rsvp"
               target='_blank'
               >
                 <img src='/rsvpBtn.png'
-                className='w-[520px]'/>
+                className='transition-transform duration-300 hover:scale-102'/>
               </a>
             </div>
             {/* signature */}
             <div className='w-full py-16 px-8'>
-              <p className='text-2xl md:text-4xl font-serif'>We cant' wait to celebrate with you!</p>
+              <p className='text-xl md:text-4xl font-serif'>We cant' wait to celebrate with you!</p>
               <p className='text-4xl md:text-6xl font-script md:py-4'>Andrew & Carolyn</p>
             </div>
           </>

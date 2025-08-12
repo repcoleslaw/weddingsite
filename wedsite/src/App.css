@@ -12,6 +12,7 @@
   --font-script: "r41-alfabeta-72", sans-serif;
   --font-serif: "the-seasons", sans-serif;
   --text-primary:'#65232E';
+  --breakpoint-sm: 30rem;
 }
 
 body{
