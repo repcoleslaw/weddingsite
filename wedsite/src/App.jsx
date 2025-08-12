@@ -3,6 +3,7 @@ import { useState } from "react";
 import LandingButton from "./components/LandingCard";
 import Card from './components/Card';
 import NavBar from './components/Nav';
+import { motion } from "framer-motion";
 
 function App() {
   const [showCard, setShowCard] = useState(false);
@@ -30,7 +31,11 @@ function App() {
               </img>
             </Card>
             {/* desktop viewer */}
-            <div className='relative w-full md:w-1/2 p-4 text-center m-auto'>                      
+            <motion.div 
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+            className='relative w-full md:w-1/2 p-4 text-center m-auto'>                      
               <img
               src="/desktopApp.png" 
               alt="go to details"
@@ -53,11 +58,11 @@ function App() {
                 <img src='/rsvpBtn.png'
                 className='w-[520px]'/>
               </a>
-            </div>
+            </motion.div>
             {/* signature */}
             <div className='w-full py-16 px-8'>
               <p className='text-2xl md:text-4xl font-serif'>We cant' wait to celebrate with you!</p>
-              <p className='text-4xl md:text-8xl font-script'>Andrew & Carolyn</p>
+              <p className='text-4xl md:text-6xl font-script md:py-4'>Andrew & Carolyn</p>
             </div>
           </>
         )}
