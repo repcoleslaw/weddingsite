@@ -28,13 +28,13 @@ export default function NavBar() {
         }`}
       >
         <div className="flex flex-col px-4 pb-4 space-y-2">
-            <a href="/" className="text-gray-800 hover:text-[#65232E] transition-colors">Home</a>
+            <a href="/" className="text-[#65232E] font-serif transition-colors">Home</a>
           {menuItems.map((item) => (
           
             <a
               key={item.name}
               href={item.href}
-              className="text-gray-800 hover:text-[#65232E] transition-colors"
+              className="text-[#65232E] font-serif transition-colors"
               onClick={() => setIsOpen(false)}
             >
               {item.name}

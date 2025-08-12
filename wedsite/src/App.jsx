@@ -27,6 +27,7 @@ function App() {
               <img
               src="/openEnvelope.png" 
               alt="open invite"
+              className='mt-16'
               >
               </img>
             </Card>
