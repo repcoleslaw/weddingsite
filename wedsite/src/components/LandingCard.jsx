@@ -3,14 +3,14 @@ import { motion } from "framer-motion";
 
 export default function LandingButton({ onClick }) {
   return (
-    <div>
+    <div className="p-16">
         <motion.h1
-            className="text-4xl font-script"
+            className="text-4xl font-serif uppercase pb-4"
             initial={{ opacity: 0, y: 50 }}           // Start invisible + 50px down
             animate={{ opacity: 1, y: 0 }}           // End fully visible + y at 0
             transition={{ duration: 0.8, ease: "easeOut" }} // Smooth ease
         >
-        Introducting
+        You're invited to
         </motion.h1>
         <motion.h1
         className="text-6xl font-script"
@@ -18,7 +18,7 @@ export default function LandingButton({ onClick }) {
         animate={{ opacity: 1, y: 0 }}           // End fully visible + y at 0
         transition={{ duration: 1, ease: "easeOut" }} // Smooth ease
         >
-        Andrew & Carolyn's
+        Andrew <span className="font-serif text-4xl">&</span> Carolyn's
         </motion.h1>
        <motion.h1
         className="text-6xl font-script"
@@ -30,20 +30,21 @@ export default function LandingButton({ onClick }) {
        </motion.h1>
 
         <motion.div
-            className="w-3/4 max-w-full p-8 m-auto"
+            className="max-w-full w-full md:w-1/2 text-center p-8 mx-auto"
             whileHover={{ scale: 1.025 }}
             initial={{ opacity: 0, y: 50 }}           // Start invisible + 50px down
             animate={{ opacity: 1, y: 0 }}           // End fully visible + y at 0
             transition={{ duration: 1.4, ease: "easeOut" }} // Smooth ease
+            onClick={onClick}
         >
         <img 
             src="/closeEnvelope.png" 
-            alt="closed invite" 
+            alt="closed invite"
         />
 
         </motion.div>
         <motion.button
-            className="font-script text-4xl p-8 rounded-full"
+            className="font-serif uppercase text-2xl rounded-full"
             initial={{ opacity: 1, y: 0 }}
             animate={{ opacity: 1, y: 0 }}
             whileHover={{ scale: 1.05 }}
@@ -51,7 +52,7 @@ export default function LandingButton({ onClick }) {
             onClick={onClick}
             transition={{ duration: 0.3 }}
         >
-            Click to Open
+            Click to open
         </motion.button>
     </div>
    

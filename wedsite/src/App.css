@@ -10,12 +10,19 @@
 
 @theme {
   --font-script: "r41-alfabeta-72", sans-serif;
+  --font-serif: "the-seasons", sans-serif;
+  --text-primary:'#65232E';
+}
+
+body{
+  background-color: #fffcf8;
 }
 
 #root {
   max-width: 1280px;
   margin: 0 auto;
   text-align: center;
+
 }
 
 .logo {
