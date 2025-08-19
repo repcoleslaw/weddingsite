@@ -27,7 +27,7 @@ export default function NavBar() {
       {/* Dropdown Menu with transition */}
       <div
         className={`overflow-hidden transition-all duration-300 ease-in-out ${
-          isOpen ? "max-h-40 opacity-100" : "max-h-0 opacity-0"
+          isOpen ? "opacity-100" : "max-h-0 opacity-0"
         }`}
       >
         <div className="flex flex-col px-4 pb-4 space-y-2">
