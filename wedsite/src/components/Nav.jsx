@@ -4,9 +4,12 @@ export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const menuItems = [
-    { name: "RSVP", href:"https://andrew-and-carolyn.wedsites.com/rsvp" },
+    
     { name: "Details", href:"https://andrew-and-carolyn.wedsites.com/" },
-    { name: "Q&A", href:"https://andrew-and-carolyn.wedsites.com/#faq" }
+    { name: "Schedule", href:"https://andrew-and-carolyn.wedsites.com/#schedule" },
+    { name: "Travel", href:"https://andrew-and-carolyn.wedsites.com/#travel" },
+    { name: "Q&A", href:"https://andrew-and-carolyn.wedsites.com/#faq" },
+    { name: "RSVP", href:"https://andrew-and-carolyn.wedsites.com/rsvp" },
   ];
 
   return (
